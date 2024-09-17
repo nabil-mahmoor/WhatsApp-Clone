@@ -21,11 +21,9 @@ class CustomElevatedButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: MyColors.greenDark,
-          foregroundColor: MyColors.backgroundDark,
-          splashFactory: NoSplash.splashFactory,
-          elevation: 0,
-          shadowColor: Colors.transparent,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(7),
+          ),
         ),
         child: Text(
           text,

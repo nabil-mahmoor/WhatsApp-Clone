@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:whatsapp_clone/common/utils/colors.dart';
+import 'package:whatsapp_clone/common/extension/custom_theme_extension.dart';
 
 class PrivacyAndTerms extends StatelessWidget {
   const PrivacyAndTerms({
@@ -19,11 +19,11 @@ class PrivacyAndTerms extends StatelessWidget {
         text: TextSpan(
           text: 'Read our ',
           style: GoogleFonts.poppins(
-              fontSize: 13, color: MyColors.greyDark, height: 1.5),
+              fontSize: 13, color: context.theme.greyColor, height: 1.5),
           children: [
             TextSpan(
               text: 'Privacy Policy.',
-              style: GoogleFonts.poppins(color: MyColors.blueDark),
+              style: GoogleFonts.poppins(color: context.theme.blueColor),
             ),
             TextSpan(
               text: ' Tap "Agree and continue" to accept the ',
@@ -31,7 +31,7 @@ class PrivacyAndTerms extends StatelessWidget {
             ),
             TextSpan(
               text: 'Terms of Services.',
-              style: GoogleFonts.poppins(color: MyColors.blueDark),
+              style: GoogleFonts.poppins(color: context.theme.blueColor),
             ),
           ],
         ),
